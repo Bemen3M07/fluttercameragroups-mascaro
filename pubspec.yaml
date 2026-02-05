@@ -1,5 +1,5 @@
-name: empty
-description: "A new Flutter project."
+name: multimedia_app
+description: "Aplicación multimedia con cámara, galería y reproductor de música."
 publish_to: 'none'
 version: 0.1.0
 
@@ -9,6 +9,11 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  camera: ^0.11.0+2
+  path_provider: ^2.1.5
+  image_gallery_saver: ^2.0.3
+  permission_handler: ^11.3.1
+  audioplayers: ^6.1.0
 
 dev_dependencies:
   flutter_test:
@@ -17,3 +22,5 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/audio/
