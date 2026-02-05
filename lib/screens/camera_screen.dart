@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:camera/camera.dart';
-import 'package:image_gallery_saver/image_gallery_saver.dart';
+import 'package:image_gallery_saver_plus/image_gallery_saver_plus.dart';
 
 class CameraScreen extends StatefulWidget {
   final Function(String) onPhotoTaken;
@@ -119,7 +119,7 @@ class _CameraScreenState extends State<CameraScreen> {
       // Intentar guardar en la galería
       String saveMessage = 'Foto capturada: ${photo.path}';
       try {
-        await ImageGallerySaver.saveFile(photo.path);
+        await ImageGallerySaverPlus.saveFile(photo.path);
         saveMessage = 'Foto guardada en galería y en: ${photo.path}';
       } catch (saveError) {
         print('Advertencia al guardar en galería: $saveError');
