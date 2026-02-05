@@ -65,15 +65,15 @@ class _HomePageState extends State<HomePage> {
         items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.camera_alt),
-            label: 'Camera',
+            label: 'Camara',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.image),
-            label: 'Picture',
+            label: 'Imagenes',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.music_note),
-            label: 'Music',
+            label: 'Musica',
           ),
         ],
       ),
